@@ -1,14 +1,20 @@
 class PomodoroTimer extends React.Component {
+	
+	totalTime(timeOne, timeTwo) {
+		return timeOne + timeTwo;
+	}
+
 	render() {
 		return (
-			<div>This timer runs for 20 minutes, followed by a rest of 5 minutes.
-			<br />For a total time of 30 minutes.
+			<div>This timer runs for {this.props.workingTime} minutes, 
+			followed by a rest of {this.props.restingTime} minutes.
+			<br />For a total time of {this.totalTime(this.props.workingTime, this.props.restingTime)} minutes.
 			<br />There are 88 seconds elapsed.</div>
 		)
 	}
 }
 
 ReactDOM.render (
-	<PomodoroTimer />,
+	<PomodoroTimer workingTime={25} restingTime={5} />,
 	document.getElementById('app')
 );
