@@ -1,18 +1,18 @@
-#### Pomodoro Timer 
+# Pomodoro Timer 
 
-A little Pomodoro Timer tool built with React
+A little Pomodoro Timer tool built with [React](https://reactjs.org/)
 
-#### Want to build this locally?
+### Want to build this locally?
 
-### Pre-requisites
+#### Pre-requisites
 
-1. [node.js](https://nodejs.org/en/) 
-2. [Babel](https://babeljs.io/)
-2.1 ```npm install --save-dev babel-cli babel-preset-react```
+- Download and install [node.js](https://nodejs.org/en/) 
+- Install [babel](https://babeljs.io/)
+	- ```npm install --save-dev babel-cli babel-preset-react```
 
-### Now we are all setup ready for our local build
+#### Local build
 
-1. $ git clone <this repo>
-2. $ cd <this repo>
-3. $ npm run babel
-4. $ open index.html
+- ```$ git clone https://github.com/urbanshed/pomodoro-timer.git```
+- ```$ cd pomodoro-timer```
+- ```$ npm run babel```
+- ```$ open index.html```
